@@ -1,0 +1,25 @@
+package aulas;
+
+import java.util.Scanner;
+
+public class Questao9lista2 {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		double salario;
+		double prestacao;
+		
+		System.out.println("Digite o salario do trabalhador: ");
+		salario = entrada.nextDouble();
+		System.out.println("Digite o valor da prestação: ");
+		prestacao = entrada.nextDouble();
+		
+		if(prestacao > 0.2*salario) {
+		System.out.println("Emprestimo não concedido");
+	}else {
+		System.out.println("Empréstimo concedido");
+	}
+
+}
+}
